@@ -106,4 +106,3 @@ public class Usuario {
         this.emailUsuario = emailUsuario;
         System.out.println("Usuário atualizado: " + nomeUsuario + " <" + emailUsuario + ">");
     }
-adiciona polimorfismo estático em Usuario
