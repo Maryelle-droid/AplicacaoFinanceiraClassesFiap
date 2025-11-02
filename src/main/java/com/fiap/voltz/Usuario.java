@@ -93,14 +93,24 @@ public class Usuario {
         this.nomeUsuario = nomeUsuario;
     }
     
-    @Override
-    public String toString()     
-    // Atualização simples
+        @Override
+    public String toString() {
+        return "Usuario{" +
+                "idUsuario=" + idUsuario +
+                ", dataCadastroUsuario='" + dataCadastroUsuario + '\'' +
+                ", tipoUsuario='" + tipoUsuario + '\'' +
+                ", senhaUsuario='" + senhaUsuario + '\'' +
+                ", emailUsuario='" + emailUsuario + '\'' +
+                ", nomeUsuario='" + nomeUsuario + '\'' +
+                '}';
+    }
+
+    // Atualização simples (sem parâmetros)
     public void atualizarDados() {
         System.out.println("Dados do usuário atualizados com sucesso!");
     }
 
-    // Atualização com nome e email (OVERLOAD)
+    // Atualização com nome e email (OVERLOAD - POLIMORFISMO ESTÁTICO)
     public void atualizarDados(String nomeUsuario, String emailUsuario) {
         this.nomeUsuario = nomeUsuario;
         this.emailUsuario = emailUsuario;
