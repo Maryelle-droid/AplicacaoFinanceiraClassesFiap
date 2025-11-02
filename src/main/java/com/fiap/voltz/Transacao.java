@@ -26,22 +26,7 @@ public class Transacao {
     }
     
     // Métodos específicos
-    public void processarTransacao() {
-        System.out.println("=== PROCESSANDO TRANSAÇÃO ===");
-        System.out.println("ID: " + this.idTransacao);
-        System.out.println("Tipo: " + this.tipoTransacao);
-        System.out.println("Valor: R$ " + this.valorTransacao);
-        System.out.println("Data: " + this.dataTransacao);
-        System.out.println("Conta ID: " + this.oidConta);
-        System.out.println("Criptoativo ID: " + this.oidCripto);
-        System.out.println("Aprovação ID: " + this.oidAprovacao);
-        System.out.println("Transação processada com sucesso!");
-    }
-    
-    public void cancelarTransacao() {
-        System.out.println("Transação ID " + this.idTransacao + " foi CANCELADA!");
-    }
-    
+   
     public void exibirDetalhes() {
         System.out.println("=== DETALHES DA TRANSAÇÃO ===");
         System.out.println("ID: " + this.idTransacao);
