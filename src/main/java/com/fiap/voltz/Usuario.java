@@ -94,14 +94,16 @@ public class Usuario {
     }
     
     @Override
-    public String toString() {
-        return "Usuario{" +
-                "idUsuario=" + idUsuario +
-                ", dataCadastroUsuario='" + dataCadastroUsuario + '\'' +
-                ", tipoUsuario='" + tipoUsuario + '\'' +
-                ", senhaUsuario='" + senhaUsuario + '\'' +
-                ", emailUsuario='" + emailUsuario + '\'' +
-                ", nomeUsuario='" + nomeUsuario + '\'' +
-                '}';
+    public String toString()     
+    // Atualização simples
+    public void atualizarDados() {
+        System.out.println("Dados do usuário atualizados com sucesso!");
     }
-}
+
+    // Atualização com nome e email (OVERLOAD)
+    public void atualizarDados(String nomeUsuario, String emailUsuario) {
+        this.nomeUsuario = nomeUsuario;
+        this.emailUsuario = emailUsuario;
+        System.out.println("Usuário atualizado: " + nomeUsuario + " <" + emailUsuario + ">");
+    }
+adiciona polimorfismo estático em Usuario
