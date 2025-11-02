@@ -124,6 +124,17 @@ public class Transacao {
     
     @Override
     public String toString() {
+        return "Transacao{" +
+                "idTransacao=" + idTransacao +
+                ", oidAprovacao=" + oidAprovacao +
+                ", oidCripto=" + oidCripto +
+                ", oidConta=" + oidConta +
+                ", dataTransacao='" + dataTransacao + '\'' +
+                ", valorTransacao=" + valorTransacao +
+                ", tipoTransacao='" + tipoTransacao + '\'' +
+                '}';
+    }
+
     // Processa transação simples
     public void processarTransacao() {
         this.dataTransacao = new Date();
@@ -137,4 +148,3 @@ public class Transacao {
         this.dataTransacao = new Date();
         System.out.println(tipo + " de R$" + valor + " processada com sucesso!");
     }
-}
