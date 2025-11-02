@@ -124,14 +124,18 @@ public class Transacao {
     
     @Override
     public String toString() {
-        return "Transacao{" +
-                "idTransacao=" + idTransacao +
-                ", oidAprovacao=" + oidAprovacao +
-                ", oidCripto=" + oidCripto +
-                ", oidConta=" + oidConta +
-                ", dataTransacao='" + dataTransacao + '\'' +
-                ", valorTransacao=" + valorTransacao +
-                ", tipoTransacao='" + tipoTransacao + '\'' +
-                '}';
+    // Processa transação simples
+    public void processarTransacao() {
+        this.dataTransacao = new Date();
+        System.out.println("Transação processada com sucesso!");
+    }
+
+    // Processa com valor e tipo (OVERLOAD)
+    public void processarTransacao(double valor, String tipo) {
+        this.valorTransacao = valor;
+        this.tipoTransacao = tipo;
+        this.dataTransacao = new Date();
+        System.out.println(tipo + " de R$" + valor + " processada com sucesso!");
     }
 }
+ adiciona polimorfismo estático em Transacao
