@@ -138,4 +138,3 @@ public class Transacao {
         System.out.println(tipo + " de R$" + valor + " processada com sucesso!");
     }
 }
- adiciona polimorfismo estático em Transacao
