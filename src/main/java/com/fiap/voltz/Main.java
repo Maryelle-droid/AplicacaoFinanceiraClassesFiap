@@ -161,7 +161,16 @@ public class Main {
             System.out.println("✅ Autenticações configuradas: 2");
             System.out.println("✅ Alertas configurados: 2");
             System.out.println();
-            
+        // === TESTE DE POLIMORFISMO ESTÁTICO (OVERLOAD) ===
+        System.out.println("\n--- POLIMORFISMO ESTÁTICO (OVERLOAD) ---");
+        
+        Usuario usuario = new Usuario();
+        usuario.atualizarDados(); // sem parâmetros
+        usuario.atualizarDados("Maryelle Lopes", "maryelle@voltz.com"); // com nome e email
+
+        Transacao transacao = new Transacao();
+        transacao.processarTransacao(); // padrão
+        transacao.processarTransacao(2500.75, "COMPRA ADA"); // com valor e tipo 
         } catch (Exception e) {
             System.err.println("Erro durante a execução: " + e.getMessage());
             e.printStackTrace();
